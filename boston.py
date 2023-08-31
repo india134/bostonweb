@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import streamlit as st
 from sklearn.ensemble import RandomForestRegressor
 import shap
+st.set_option('deprecation.showPyplotGlobalUse',False)
 df= pd.read_csv("C:/Users/tutel/Downloads/boston-housing-dataset.csv")
 st.write("Boston House Prediction")
 Y= df['MEDV']
